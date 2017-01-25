@@ -42,7 +42,7 @@ alternatives --set javac /usr/bin/javac
 # Set environment variables, temporary and permanent
 echo -e "\n\n Setting up environment variables, temporary and permanent..."
 
-
+curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setJavaEnv.sh > setJavaEnv.sh
 source setJavaEnv.sh
 
 clear 
