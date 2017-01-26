@@ -22,8 +22,9 @@ cd ~
 yum install openssh-server openssh-clients openssh
 mkdir /root/.ssh/
 touch /root/.ssh/id_rsa
+chmod -R 0600 /root/.ssh
 
-ssh-keygen -t rsa -P '' -f '/root/.ssh/id_rsa' -y
+ssh-keygen -t rsa -q 
 
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
