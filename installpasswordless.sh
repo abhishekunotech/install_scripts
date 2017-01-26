@@ -20,9 +20,6 @@ sleep 1
 
 cd ~
 yum install openssh-server openssh-clients openssh
-mkdir /root/.ssh/
-touch /root/.ssh/id_rsa
-chmod -R 0600 /root/.ssh
 
 ssh-keygen -t rsa -q 
 
@@ -32,11 +29,6 @@ chmod 0600 ~/.ssh/authorized_keys
 
 service sshd start
 
-ssh localhost
-
-sleep 1
-
-exit 1
 
 
 clear
