@@ -7,9 +7,9 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 
-curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/installjava.sh > installjava.sh
-chmod +x installjava.sh
-./installjava.sh
+curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/install_java.sh > install_java.sh
+chmod +x install_java.sh
+./install_java.sh
 
 echo $JAVA_HOME
 
