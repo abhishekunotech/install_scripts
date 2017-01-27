@@ -49,6 +49,9 @@ echo "export JAVA_HOME=/opt/jdk1.8.0_111" >> /etc/bashrc
 echo "export JRE_HOME=/opt/jdk1.8.0_111/jre" >> /etc/bashrc
 echo "export PATH=\$PATH:/opt/jdk1.8.0_111/bin:/opt/jdk1.8.0_111/jre/bin" >> /etc/bashrc
 
+
+
+source /etc/bashrc
 clear 
 figlet  -f small "Done, all good? check" 
 
