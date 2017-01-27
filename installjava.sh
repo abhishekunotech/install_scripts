@@ -50,7 +50,6 @@ echo -e "TESTING JAVA HOME SET/UNSET inside installjava.sh"
 echo $JAVA_HOME
 
 
-
 figlet  -f small "Done, all good? check" 
 
 # Show stuff

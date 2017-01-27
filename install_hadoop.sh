@@ -8,7 +8,11 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/installpasswordless.sh > installpass.sh
-bash installpass.sh
+chmod +x installpass.sh
+./installpass.sh
+
+echo -e "We are inside install hadoop"
+echo $JAVA_HOME
 
 cd /opt
 mkdir hadoop && cd hadoop

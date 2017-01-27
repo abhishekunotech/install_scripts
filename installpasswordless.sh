@@ -8,7 +8,8 @@ fi
 
 
 curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/installjava.sh > installjava.sh
-bash installjava.sh
+chmod +x installjava.sh
+./installjava.sh
 
 echo $JAVA_HOME
 
