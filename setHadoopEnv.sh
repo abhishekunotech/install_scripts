@@ -2,7 +2,7 @@
 echo "Now we set the Environment Variables for Hadoop 2.7.3"
 
 #Hadoop Enviroment Variables Starts
-export JAVA_HOME=/opt/java/jdk1.8.0_111
+export JAVA_HOME=/opt/jdk1.8.0_111
 export HADOOP_INSTALL=/opt/hadoop/hadoop-2.7.3
 export HADOOP_PREFIX=/opt/hadoop/hadoop-2.7.3
 export HADOOP_HOME=/opt/hadoop/hadoop-2.7.3
