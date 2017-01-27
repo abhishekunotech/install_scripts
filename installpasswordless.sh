@@ -14,7 +14,6 @@ echo $JAVA_HOME
 
 sleep 2
 
-clear
 figlet -f banner "Java Installed :-)"
 figlet -f small "Installing Passwordless SSH ..."
 
@@ -35,7 +34,6 @@ service sshd start
 
 
 
-clear
 figlet -f banner "Passwordless SSH Installed :-)"
 figlet -f small "Installing Hadoop ..."
 
