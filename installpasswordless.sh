@@ -10,6 +10,10 @@ fi
 curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/installjava.sh > installjava.sh
 bash installjava.sh
 
+echo $JAVA_HOME
+
+sleep 2
+
 clear
 figlet -f banner "Java Installed :-)"
 figlet -f small "Installing Passwordless SSH ..."
