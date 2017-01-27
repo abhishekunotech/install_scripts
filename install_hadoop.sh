@@ -17,7 +17,7 @@ wget http://redrockdigimark.com/apachemirror/hadoop/common/hadoop-2.7.3/hadoop-2
 
 tar -zxvf hadoop-2.7.3.tar.gz
 
-curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setJavaEnv.sh > setJavaEnv.sh
+curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setHadoopEnv.sh > setHadoopEnv.sh
 source setHadoopEnv.sh
 
 hadoop version
