@@ -45,6 +45,11 @@ echo -e "\n\n Setting up environment variables, temporary and permanent..."
 curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setJavaEnv.sh > setJavaEnv.sh
 source setJavaEnv.sh
 
+
+echo -e "TESTING JAVA HOME SET/UNSET inside installjava.sh"
+echo $JAVA_HOME
+
+
 clear 
 figlet  -f small "Done, all good? check" 
 
