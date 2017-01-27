@@ -21,8 +21,34 @@ wget http://redrockdigimark.com/apachemirror/hadoop/common/hadoop-2.7.3/hadoop-2
 
 tar -zxvf hadoop-2.7.3.tar.gz
 
-curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setHadoopEnv.sh > setHadoopEnv.sh
-source setHadoopEnv.sh
+#curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setHadoopEnv.sh > setHadoopEnv.sh
+#source setHadoopEnv.sh
+
+export JAVA_HOME=/opt/jdk1.8.0_111
+export HADOOP_INSTALL=/opt/hadoop/hadoop-2.7.3
+export HADOOP_PREFIX=/opt/hadoop/hadoop-2.7.3
+export HADOOP_HOME=/opt/hadoop/hadoop-2.7.3
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export PATH=$HADOOP_INSTALL/bin:$PATH
+export PATH=$HADOOP_INSTALL/sbin:$PATH
+
+echo "export JAVA_HOME=/opt/jdk1.8.0_111" >> /etc/bashrc
+echo "export HADOOP_INSTALL=/opt/hadoop/hadoop-2.7.3" >> /etc/bashrc
+echo "export HADOOP_PREFIX=/opt/hadoop/hadoop-2.7.3" >> /etc/bashrc
+echo "export HADOOP_HOME=/opt/hadoop/hadoop-2.7.3" >> /etc/bashrc
+echo "export HADOOP_MAPRED_HOME=$HADOOP_HOME" >> /etc/bashrc
+echo "export HADOOP_COMMON_HOME=$HADOOP_HOME" >> /etc/bashrc
+echo "export HADOOP_HDFS_HOME=$HADOOP_HOME" >> /etc/bashrc
+echo "export YARN_HOME=$HADOOP_HOME" >> /etc/bashrc
+echo "export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native" >> /etc/bashrc
+echo "export PATH=$HADOOP_INSTALL/bin:$PATH" >> /etc/bashrc
+echo "export PATH=$HADOOP_INSTALL/sbin:$PATH" >> /etc/bashrc
+
+source /etc/bashrc
 
 hadoop version
 
