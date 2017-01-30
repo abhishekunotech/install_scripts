@@ -34,7 +34,7 @@ tar -zxvf apache-hive-1.2.1-bin.tar.gz
 
 
 
-export HIVE_HOME=/opt/hive
+export HIVE_HOME=/opt/hive/apache-hive-1.2.1-bin
 export PATH=$HIVE_HOME/bin:$PATH
 export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:.
 export CLASSPATH=$CLASSPATH:$HIVE_HOME/lib/*:.
@@ -75,3 +75,8 @@ figlet -f small "Installing MYSQL ..."
 sleep 1
 
 
+wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+
+yum localinstall -y mysql57-community-release-el7-9.noarch.rpm
+
+yum install -y mysql-community-server
