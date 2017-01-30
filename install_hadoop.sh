@@ -24,7 +24,7 @@ tar -zxvf hadoop-2.7.3.tar.gz
 #curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/setHadoopEnv.sh > setHadoopEnv.sh
 #source setHadoopEnv.sh
 
-export JAVA_HOME=/opt/jdk1.8.0_111
+export JAVA_HOME=/opt/jdk1.8.0_111/bin
 export HADOOP_INSTALL=/opt/hadoop/hadoop-2.7.3
 export HADOOP_PREFIX=/opt/hadoop/hadoop-2.7.3
 export HADOOP_HOME=/opt/hadoop/hadoop-2.7.3
@@ -36,7 +36,7 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$HADOOP_INSTALL/bin:$PATH
 export PATH=$HADOOP_INSTALL/sbin:$PATH
 
-echo "export JAVA_HOME=/opt/jdk1.8.0_111" >> /etc/bashrc
+echo "export JAVA_HOME=/opt/jdk1.8.0_111/bin" >> /etc/bashrc
 echo "export HADOOP_INSTALL=/opt/hadoop/hadoop-2.7.3" >> /etc/bashrc
 echo "export HADOOP_PREFIX=/opt/hadoop/hadoop-2.7.3" >> /etc/bashrc
 echo "export HADOOP_HOME=/opt/hadoop/hadoop-2.7.3" >> /etc/bashrc
