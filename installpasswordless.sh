@@ -7,15 +7,15 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 
-curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/install_java.sh > install_java.sh
-chmod +x install_java.sh
-./install_java.sh
+curl https://raw.githubusercontent.com/abhishekunotech/install_scripts/master/install_scala.sh > install_scala.sh
+chmod +x install_scala.sh
+./install_scala.sh
 
 echo $JAVA_HOME
 
 sleep 2
 
-figlet -f banner "Java Installed :-)"
+figlet -f banner "Scala Installed :-)"
 figlet -f small "Installing Passwordless SSH ..."
 
 sleep 1
@@ -36,6 +36,5 @@ service sshd start
 
 
 figlet -f banner "Passwordless SSH Installed :-)"
-figlet -f small "Installing Hadoop ..."
 
 sleep 1
