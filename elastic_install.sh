@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum install java-1.7.0-openjdk.x86_64
+yum install -y java-1.7.0-openjdk.x86_64
 yum install -y wget vim
 
 rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
