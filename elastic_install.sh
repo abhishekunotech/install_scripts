@@ -19,7 +19,7 @@ yum install -y elasticsearch
 
 cd /etc/elasticsearch/
 
-cat <<EOF >> elasticsearch.yaml
+cat <<EOF >> elasticsearch.yml
 network.host: 0.0.0.0
 EOF
 
