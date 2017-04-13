@@ -13,3 +13,4 @@ chmod +x /etc/init.d/otrs-fcgi
 cd ~
 cp otrs-fcgi/nginx/otrs /etc/nginx/conf.d/otrs.conf
 systemctl start nginx
+sed -i -r 's/www-data/root/' /etc/init.d/otrs-fcgi
